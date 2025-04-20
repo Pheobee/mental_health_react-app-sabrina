@@ -1,0 +1,399 @@
+{
+  "depression": {
+    "title": "Depression Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I feel sad or down most of the time.",
+        "weight": 2,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I have trouble enjoying things I used to like.",
+        "weight": 2,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "I struggle to find motivation to start my day.",
+        "weight": 2,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "I feel hopeless about the future.",
+        "weight": 3,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "I have changes in my appetite or weight.",
+        "weight": 2,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "I feel tired or have little energy.",
+        "weight": 2,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "I feel bad about myself or that I am a failure.",
+        "weight": 3,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "I have difficulty concentrating on tasks.",
+        "weight": 1,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "I think I would be better off dead or hurting myself.",
+        "weight": 3,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "I cry more easily than usual.",
+        "weight": 1,
+        "options": [
+          {
+            "label": "Not at all",
+            "value": 0
+          },
+          {
+            "label": "Several days",
+            "value": 1
+          },
+          {
+            "label": "More than half the days",
+            "value": 2
+          },
+          {
+            "label": "Nearly every day",
+            "value": 3
+          }
+        ]
+      }
+    ]
+  },
+  "anxiety": {
+    "title": "Anxiety Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I often feel nervous, anxious, or on edge.",
+        "weight": 2,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Almost always", "value": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I find it difficult to relax.",
+        "weight": 1,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Almost always", "value": 3 }
+        ]
+      }
+    ]
+  },
+  "adhd": {
+    "title": "ADHD Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I find it hard to stay focused on tasks.",
+        "weight": 2,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Very often", "value": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I frequently lose things necessary for tasks or activities.",
+        "weight": 1,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Very often", "value": 3 }
+        ]
+      }
+    ]
+  },
+  "stress": {
+    "title": "Stress Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I feel overwhelmed by responsibilities.",
+        "weight": 2,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Always", "value": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I find it hard to concentrate due to stress.",
+        "weight": 1,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Always", "value": 3 }
+        ]
+      }
+    ]
+  },
+  "sleep": {
+    "title": "Sleep Quality Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I wake up feeling rested.",
+        "weight": 2,
+        "options": [
+          { "label": "Always", "value": 0 },
+          { "label": "Often", "value": 1 },
+          { "label": "Rarely", "value": 2 },
+          { "label": "Never", "value": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I have trouble falling or staying asleep.",
+        "weight": 2,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Always", "value": 3 }
+        ]
+      }
+    ]
+  },
+  "esteem": {
+    "title": "Self-Esteem Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I believe in my own worth and value.",
+        "weight": 2,
+        "options": [
+          { "label": "Always", "value": 0 },
+          { "label": "Often", "value": 1 },
+          { "label": "Sometimes", "value": 2 },
+          { "label": "Never", "value": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I feel inferior to others.",
+        "weight": 1,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Always", "value": 3 }
+        ]
+      }
+    ]
+  },
+  "social": {
+    "title": "Social Anxiety Test",
+    "questions": [
+      {
+        "id": 1,
+        "text": "I avoid social events due to fear or discomfort.",
+        "weight": 2,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Occasionally", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Always", "value": 3 }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "I worry about being judged by others.",
+        "weight": 1,
+        "options": [
+          { "label": "Never", "value": 0 },
+          { "label": "Sometimes", "value": 1 },
+          { "label": "Often", "value": 2 },
+          { "label": "Always", "value": 3 }
+        ]
+      }
+    ]
+  }
+}

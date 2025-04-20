@@ -1,0 +1,124 @@
+/* === General Page Setup === */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* === Auth Container === */
+  .signUp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 4rem;
+    background-color: #fdfdfd;
+  }
+  
+  /* === Auth Image === */
+  .signUp img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* === Auth Form === */
+  .signUp form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    gap: 1.5rem;
+  }
+  
+  .signUp form h2 {
+    margin-bottom: 1rem;
+    color: #fe828c;
+    text-align: center;
+  }
+  
+  /* === Inputs & Select === */
+  .signUp form input,
+  .signUp form select {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    width: 100%;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .signUp form select{
+    width: 110%;
+  }
+  .signUp form input:focus,
+  .signUp form select:focus {
+    border-color: #fe828c;
+    background-color: #fff;
+  }
+  
+  /* === Button === */
+  .signUp form button {
+    background-color: #fe828c;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 110%;   
+    transition: background-color 0.3s;
+  }
+  
+  .signUp form button:hover {
+    background-color: #ff5e6e;
+  }
+  
+  /* === Error Message === */
+  .signUp form .error {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* === Mobile Responsive === */
+  @media screen and (max-width: 768px) {
+    .signUp {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 2rem;
+    }
+  
+    .signUp img {
+      width: 100%;
+      max-height: 300px;
+    }
+  
+    .signUp form {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .signUp form input,
+    .signUp form select {
+      font-size: 1rem;
+    }
+  
+    .signUp form button {
+      font-size: 1rem;
+    }
+  }
+  

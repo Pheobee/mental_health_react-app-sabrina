@@ -1,0 +1,103 @@
+.user-settings {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff0f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .user-settings h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  .settings-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .settings-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .settings-form input,
+  .settings-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  
+  .toggles {
+    margin: 1.5rem 0;
+  }
+  
+  .toggles label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .user-settings button {
+    background-color: #fe828c;
+    color: black;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 700;
+  }
+  
+  .user-settings button:hover {
+    background-color: black;
+    color: white;
+  }
+  .profile-pic-preview {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-pic-preview-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .settings-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .cancel-button {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .cancel-button:hover {
+    background-color: #ddd;
+  }
+  

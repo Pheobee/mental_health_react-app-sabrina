@@ -1,0 +1,46 @@
+.footer{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 4rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+
+.socialMediaLinks{
+    display: flex;
+    gap: 30px;
+    width: 400px;
+    padding: 3rem 0;
+}
+
+.socialMediaLinks img{
+    cursor: pointer;
+}
