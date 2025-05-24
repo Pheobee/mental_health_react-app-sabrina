@@ -111,29 +111,92 @@ const TherapistBookingSystem = () => {
     setSelectedTherapist(therapist);
   };
 
-  const handleBookAppointment = () => {
+
+  // const handleBookAppointment = async () => {
+  //   if (!selectedTherapist || !selectedDate || !selectedTime) {
+  //     alert("Please select a therapist, date, and time slot.");
+  //     return;
+  //   }
+  
+  //   try {
+  //     const currentUser = JSON.parse(localStorage.getItem("user"));
+  //     const userId = currentUser?.id;
+  
+  //     if (!userId) {
+  //       alert("User not logged in. Please log in again.");
+  //       return;
+  //     }
+  
+  //     // Build a UTC Date
+  //     const dateTimeLocal = new Date(`${selectedDate}T${selectedTime}:00`);
+  //     const dateTimeUtc = new Date(dateTimeLocal.getTime() - dateTimeLocal.getTimezoneOffset() * 60000);
+  
+  //     const newAppointment = {
+  //       patientId: userId,
+  //       therapistId: selectedTherapist.id,
+  //       date: dateTimeUtc.toISOString(),  
+  //       status: "pending",
+  //       sessionType: "video",
+  //       price: selectedTherapist.price,
+  //       paymentStatus: "unpaid",
+  //       paymentProvider: null,
+  //       transactionId: null,
+  //       notes: null
+  //     };
+  
+  //     console.log("Booking appointment:", JSON.stringify(newAppointment, null, 2));
+  
+  //     const response = await axios.post('https://localhost:7203/api/Appointments', newAppointment);
+  
+  //     if (response.status === 200) {
+  //       setSelectedTherapist(null);
+  //       setSelectedDate("");
+  //       setSelectedTime("");
+  //       setShowToast(true);
+  //       setTimeout(() => setShowToast(false), 3000);
+  //     }
+  //   } catch (error) {
+  //     console.error('Booking failed:', error.response ? error.response.data : error.message);
+  //     alert("Failed to book appointment.");
+  //   }
+  // };
+  
+  const handleBookAppointment = async () => {
     if (!selectedTherapist || !selectedDate || !selectedTime) {
-      alert("Please select a date and time slot.");
+      alert("Please select a therapist, date, and time slot.");
       return;
     }
   
-    const newAppointment = {
-      id: Date.now(),
-      name: selectedTherapist.name,
-      specialty: selectedTherapist.specialty,
-      dateTime: `${selectedDate}T${selectedTime}:00`,
-    };
+    try {
+      // Build local DateTime string
+      const dateTime = `${selectedDate}T${selectedTime}:00`;
   
-    const existing = JSON.parse(localStorage.getItem("appointments")) || [];
-    localStorage.setItem("appointments", JSON.stringify([...existing, newAppointment]));
+      const newAppointment = {
+        id: Date.now(),  // temporary unique id
+        name: selectedTherapist.name,    // therapist name
+        specialty: selectedTherapist.specialty,
+        dateTime: dateTime,
+        price: selectedTherapist.price,
+        status: "pending",               // booking status
+      };
   
-    setSelectedTherapist(null);
-    setSelectedDate("");
-    setSelectedTime("");
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000);
+      console.log("Saving appointment to localStorage:", JSON.stringify(newAppointment, null, 2));
+  
+      // Save to localStorage
+      const existingAppointments = JSON.parse(localStorage.getItem("appointments")) || [];
+      localStorage.setItem("appointments", JSON.stringify([...existingAppointments, newAppointment]));
+  
+      setSelectedTherapist(null);
+      setSelectedDate("");
+      setSelectedTime("");
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 3000);
+    } catch (error) {
+      console.error('Saving to localStorage failed:', error.message);
+      alert("Failed to save appointment locally.");
+    }
   };
-
+  
   return (
     <div className="therapist-booking-system">
  
