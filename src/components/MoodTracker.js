@@ -45,7 +45,7 @@ const MoodTracker = () => {
     let pos = 0;
     let neg = 0;
     logs.forEach(log => {
-      const moodArray = log.moods?.split(", ") || [];
+      const moodArray = log.mood?.split(", ") || [];
       moodArray.forEach(m => {
         if (positiveMoods.includes(m)) pos++;
         else if (negativeMoods.includes(m)) neg++;
@@ -76,7 +76,7 @@ const MoodTracker = () => {
       try {
         const moodLog = {
           userId,
-          mood: selectedMoods.join(", "),  // ✅ Fix here
+          mood: selectedMoods.join(", "), 
           date: new Date().toISOString(),
         };
     
